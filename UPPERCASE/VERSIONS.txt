@@ -1,6 +1,7 @@
 1.2.3 ()
 - SOUND isLoop 추가
 - SOUND stop 추가
+- word-break 버그 제거
 
 1.2.2 (2014. 1. 30)
 - 링크 기본 색상을 #fff로 고정
