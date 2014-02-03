@@ -1,5 +1,6 @@
 UPPERCASE Facebook BOX
 ======================
+This is Facebook BOX for UPPERCASE(http://UPPERCASE.IO).
 - init
 - signIn
 - signOut
@@ -8,3 +9,5 @@ UPPERCASE Facebook BOX
 - invite
 - LikeButton
 - share
+
+CONTACT: contact@btncafe.com
