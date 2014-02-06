@@ -1,7 +1,9 @@
-1.2.3 ()
+1.2.3 (2014. 2. 6)
 - SOUND isLoop 추가
 - SOUND stop 추가
 - word-break 버그 제거
+- DOM on 추가
+- 모바일에서 mouseover/mouseout 지원
 
 1.2.2 (2014. 1. 30)
 - 링크 기본 색상을 #fff로 고정
