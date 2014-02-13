@@ -1,3 +1,7 @@
+1.2.4.1 (2014. 2. 13)
+- Event Bubbling 문제 해결
+- LOOP 생성시 하나의 func만 넘어오면 interval로 지정
+
 1.2.4 (2014. 2. 13)
 - DOM 메모리 누수 해결
 - DOM 제거시 Event 실행 중단
