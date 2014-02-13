@@ -1,7 +1,9 @@
-1.2.4 (working)
+1.2.4 (2014. 2. 13)
 - DOM 메모리 누수 해결
 - DOM 제거시 Event 실행 중단
 - Database API 변경
+- 부팅 로그, 사용자 접속 로그 자동저장 기능 제거 (불필요한 부하)
+- 데이터베이스를 사용하지 않을 경우 SERVER_CONFIG.isNotUsingDB = true 설정 추가
 
 1.2.3 (2014. 2. 6)
 - SOUND isLoop 추가
