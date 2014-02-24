@@ -1,5 +1,9 @@
 Facebook.signIn = METHOD({
 
+	statics : function(m) {'use strict';
+		//m.isSigned
+	},
+
 	run : function(m, scope, _callbacks) {'use strict';
 		//OPTIONAL: scope
 		//OPTIONAL: _callbacks
@@ -11,10 +15,22 @@ Facebook.signIn = METHOD({
 		callbacks = _callbacks === undefined ? scope : _callbacks,
 
 		// signed.
-		signed = callbacks.signed,
+		signed = function(response) {
+
+			m.isSigned = true;
+
+			callbacks.signed(response);
+		},
 
 		// unsigned.
-		unsigned = callbacks.unsigned;
+		unsigned = function() {
+
+			m.isSigned = false;
+
+			if (callbacks.unsigned !== undefined) {
+				callbacks.unsigned();
+			}
+		};
 
 		if (_callbacks === undefined) {
 			scope = undefined;
@@ -54,7 +70,7 @@ Facebook.signIn = METHOD({
 								signed(response);
 							});
 						});
-					} else if (unsigned !== undefined) {
+					} else {
 						unsigned();
 					}
 				}, {
@@ -83,7 +99,7 @@ Facebook.signIn = METHOD({
 								signed(response);
 							});
 						});
-					} else if (unsigned !== undefined) {
+					} else {
 						unsigned();
 					}
 				}, {

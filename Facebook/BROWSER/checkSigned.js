@@ -7,10 +7,24 @@ Facebook.checkSigned = METHOD({
 
 		var
 		// signed.
-		signed = callbacks.signed,
+		signed = function(response) {
+
+			Facebook.signIn.isSigned = true;
+
+			if (callbacks.signed !== undefined) {
+				callbacks.signed(response);
+			}
+		},
 
 		// unsigned.
-		unsigned = callbacks.unsigned;
+		unsigned = function() {
+
+			Facebook.signIn.isSigned = false;
+
+			if (callbacks.unsigned !== undefined) {
+				callbacks.unsigned();
+			}
+		};
 
 		if (CONFIG.Facebook !== undefined) {
 
@@ -29,12 +43,10 @@ Facebook.checkSigned = METHOD({
 
 							response.friends = friendInfos;
 
-							if (signed !== undefined) {
-								signed(response);
-							}
+							signed(response);
 						});
 					});
-				} else if (unsigned !== undefined) {
+				} else {
 					unsigned();
 				}
 			});

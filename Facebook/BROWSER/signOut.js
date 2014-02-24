@@ -7,6 +7,8 @@ Facebook.signOut = METHOD({
 			FB.logout(function(response) {
 				// user is now logged out
 
+				Facebook.signIn.isSigned = false;
+
 				if (callback !== undefined) {
 					callback();
 				}
