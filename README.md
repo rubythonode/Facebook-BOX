@@ -10,4 +10,6 @@ This is Facebook BOX for UPPERCASE(http://UPPERCASE.IO).
 - LikeButton
 - share
 
+UPPERCASE Official Site: http://UPPERCASE.IO
+
 CONTACT: contact@btncafe.com
