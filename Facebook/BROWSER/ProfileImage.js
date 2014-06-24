@@ -4,7 +4,7 @@ Facebook.ProfileImg = CLASS({
 		return IMG;
 	},
 
-	init : function(cls, inner, self, params) {'use strict';
+	init : function(inner, self, params) {'use strict';
 		//REQUIRED: params
 		//REQUIRED: params.id
 		//OPTIONAL: params.type

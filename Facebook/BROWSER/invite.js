@@ -1,6 +1,6 @@
 Facebook.invite = METHOD({
 
-	run : function(m, params) {'use strict';
+	run : function(params) {'use strict';
 		//REQUIRED: params
 		//REQUIRED: params.message
 		//OPTIONAL: params.display

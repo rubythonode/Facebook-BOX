@@ -237,10 +237,10 @@ global.PACKER = function() {'use strict';
 
 		var
 		// uglify-js
-		uglifyJS = require(rootPath + '/UPPERCASE/SERVER/node_modules/uglify-js'),
+		uglifyJS = require(rootPath + '/UPPERCASE.IO/SERVER/node_modules/uglify-js'),
 
 		// sqwish
-		sqwish = require(rootPath + '/UPPERCASE/SERVER/node_modules/sqwish');
+		sqwish = require(rootPath + '/UPPERCASE.IO/SERVER/node_modules/sqwish');
 
 		// minify browser script.
 		browserScript = uglifyJS.parse(browserScript).print_to_string();

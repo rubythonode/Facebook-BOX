@@ -9,7 +9,7 @@ TestView = CLASS({
 		return VIEW;
 	},
 
-	init : function(cls, inner, self) {'use strict';
+	init : function(inner, self) {'use strict';
 
 		var
 		// on change params.
@@ -41,7 +41,7 @@ TestBox.View = CLASS({
 		return TestBox.VIEW;
 	},
 
-	init : function(cls, inner, self) {'use strict';
+	init : function(inner, self) {'use strict';
 
 		var
 		// on change params.
@@ -99,7 +99,7 @@ div = DIV({
 		style : {
 			textDecoration : 'underline'
 		},
-		c : ['open test view on new window.'],
+		c : 'open test view on new window.',
 		on : {
 			tap : function() {
 				GO_NEW_WIN('test');
@@ -109,7 +109,7 @@ div = DIV({
 		style : {
 			textDecoration : 'underline'
 		},
-		c : ['open TestBox\'s test view on new window.'],
+		c : 'open TestBox\'s test view on new window.',
 		on : {
 			tap : function() {
 				TestBox.GO_NEW_WIN('test/1');

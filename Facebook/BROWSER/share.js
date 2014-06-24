@@ -1,6 +1,6 @@
 Facebook.share = METHOD({
 
-	run : function(m, params) {'use strict';
+	run : function(params) {'use strict';
 		//REQUIRED: params
 		//REQUIRED: params.href
 		//OPTIONAL: params.display

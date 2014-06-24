@@ -4,7 +4,7 @@ Facebook.LikeButton = CLASS({
 		return IFRAME;
 	},
 
-	init : function(cls, inner, self, params) {'use strict';
+	init : function(inner, self, params) {'use strict';
 		//REQUIRED: params
 		//REQUIRED: params.href
 		//OPTIONAL: params.layout

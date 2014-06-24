@@ -6,7 +6,7 @@ TestView = CLASS({
 		return VIEW;
 	},
 
-	init : function(cls, inner, self) {'use strict';
+	init : function(inner, self) {'use strict';
 
 		var
 		// on change params.
@@ -45,7 +45,7 @@ div = DIV({
 		style : {
 			textDecoration : 'underline'
 		},
-		c : ['test'],
+		c : 'test',
 		on : {
 			tap : function() {
 				GO('test');
@@ -55,7 +55,7 @@ div = DIV({
 		style : {
 			textDecoration : 'underline'
 		},
-		c : ['test/1'],
+		c : 'test/1',
 		on : {
 			tap : function() {
 				GO('test/1');

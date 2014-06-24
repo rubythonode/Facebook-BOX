@@ -1,6 +1,6 @@
 Facebook.checkSigned = METHOD({
 
-	run : function(m, callbacks) {'use strict';
+	run : function(callbacks) {'use strict';
 		//REQUIRED: callbacks
 		//OPTIONAL: callbacks.signed
 		//OPTIONAL: callbacks.unsigned

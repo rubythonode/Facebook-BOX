@@ -9,7 +9,7 @@ TestBox.View = CLASS({
 		return TestBox.VIEW;
 	},
 
-	init : function(cls, inner, self) {'use strict';
+	init : function(inner, self) {'use strict';
 
 		var
 		// on change params.
@@ -56,7 +56,7 @@ div = DIV({
 		style : {
 			textDecoration : 'underline'
 		},
-		c : ['Refresh this view.'],
+		c : 'Refresh this view.',
 		on : {
 			tap : function() {
 				REFRESH();

@@ -1,6 +1,6 @@
 Facebook.signOut = METHOD({
 
-	run : function(m, callback) {'use strict';
+	run : function(callback) {'use strict';
 		//OPTIONAL: callback
 
 		if (global.FB !== undefined && FB.getAuthResponse() !== undefined && FB.getAuthResponse() !== null) {
